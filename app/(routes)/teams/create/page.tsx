@@ -2,6 +2,7 @@
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs';
 import { useMutation } from 'convex/react';
 import { api } from '@/convex/_generated/api';
@@ -56,7 +57,7 @@ function CreateTeam() {
 	return (
 		<div className=' px-6 md:px-16 my-16'>
 			<Link href='/dashboard'>
-				<h1 className='text-2xl font-bold'>Code Sketch</h1>
+				<Image src='/logo-1.png' alt='logo' width={80} height={80} />
 			</Link>
 
 			<div className='flex flex-col items-center mt-8'>
